@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:navigationIcon="@drawable/ic_arrow_back"
+            app:title="Request Inventory"
+            app:titleTextAppearance="@style/Toolbar.TitleText">
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/toolbarback">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:id="@+id/id"
+                    android:text="Gold Maintanence Package (Job ID #34)"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.6">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_cars" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:text="@string/report"
+                    android:textColor="@color/colorText"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBack"
+            android:orientation="vertical">
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="3"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:weightSum="7"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Name"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorText2" />
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Remark"
+                        android:gravity="center"
+
+                        android:textStyle="bold"
+                        android:textColor="@color/colorText2" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textStyle="bold"
+                        android:gravity="center"
+
+                        android:textColor="@color/colorText2"
+                        android:text="Check Status"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textStyle="bold"
+
+                        android:textColor="@color/colorText2"
+                        android:text="Request Material"/>
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorText2"
+                        android:text="Quantity"/>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+
+                    android:layout_height="1dp"
+                    android:background="@color/colorDivider" />
+
+
+
+                <LinearLayout
+                    android:weightSum="7"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Others"
+                        android:textColor="@color/colorPrimary"
+                        />
+
+                    <TextView
+                        android:id="@+id/other"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="na"
+
+                        android:textColor="@color/colorPrimary" />
+
+                    <Spinner
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:layout_width="0dp"
+                        android:id="@+id/other_status"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:entries="@array/array_status"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimary" />
+
+                    <Spinner
+                        android:layout_width="0dp"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:id="@+id/other_material"
+
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:entries="@array/array_name"
+                        android:textColor="@color/colorPrimary"
+                        />
+
+                    <EditText
+                        android:id="@+id/other_quantity"
+
+                        android:inputType="number"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+
+                    android:layout_height="1dp"
+                    android:background="@color/colorDivider" />
+
+                <LinearLayout
+                    android:weightSum="7"
+
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Battery"
+                        android:textColor="@color/colorPrimary"
+                        />
+                    <TextView
+                        android:text="na"
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/battery"
+                        android:gravity="center"
+
+                        android:textColor="@color/colorPrimary" />
+                    <Spinner
+                        android:entries="@array/array_status"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:gravity="center"
+                        android:id="@+id/battery_status"
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+
+                        android:textColor="@color/colorPrimary" />
+                    <Spinner
+                        android:entries="@array/array_name"
+                        android:gravity="center"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:id="@+id/battery_material"
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+
+                        android:textColor="@color/colorPrimary" />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:id="@+id/battery_quantity"
+
+                        android:textColor="@color/colorPrimary"/>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+
+                    android:layout_height="1dp"
+                    android:background="@color/colorDivider" />
+
+                <LinearLayout
+                    android:weightSum="7"
+
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Suspension"
+                        android:textColor="@color/colorPrimary"
+                        />
+                    <TextView
+                        android:text="na"
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/suspension"
+                        android:gravity="center"
+
+                        android:textColor="@color/colorPrimary" />
+                    <Spinner
+                        android:entries="@array/array_status"
+                        android:id="@+id/suspension_status"
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:gravity="center"
+
+                        android:textColor="@color/colorPrimary" />
+                    <Spinner
+                        android:entries="@array/array_name"
+                        android:gravity="center"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:id="@+id/suspension_material"
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+
+                        android:textColor="@color/colorPrimary" />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:inputType="number"
+
+                        android:layout_height="wrap_content"
+                        android:id="@+id/suspension_quantity"
+
+                        android:textColor="@color/colorPrimary"/>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+
+                    android:layout_height="1dp"
+                    android:background="@color/colorDivider" />
+                <LinearLayout
+                    android:weightSum="7"
+
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Engine"
+                        android:textColor="@color/colorPrimary"
+                        />
+                    <TextView
+                        android:text="na"
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/engine"
+                        android:gravity="center"
+
+                        android:textColor="@color/colorPrimary" />
+                    <Spinner
+                        android:entries="@array/array_status"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:gravity="center"
+                        android:id="@+id/engine_status"
+
+                        android:textColor="@color/colorPrimary" />
+                    <Spinner
+                        android:entries="@array/array_name"
+                        android:gravity="center"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:id="@+id/engine_material"
+
+                        android:textColor="@color/colorPrimary" />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:inputType="number"
+
+                        android:layout_height="wrap_content"
+                        android:id="@+id/engine_quantity"
+
+                        android:textColor="@color/colorPrimary"/>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+
+                    android:layout_height="1dp"
+                    android:background="@color/colorDivider" />
+                <LinearLayout
+                    android:weightSum="7"
+
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Steering"
+                        android:textColor="@color/colorPrimary"
+                        />
+                    <TextView
+                        android:text="na"
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/steering"
+                        android:gravity="center"
+
+                        android:textColor="@color/colorPrimary" />
+                    <Spinner
+                        android:entries="@array/array_status"
+                        android:gravity="center"
+                        android:id="@+id/steering_status"
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+
+                        android:textColor="@color/colorPrimary" />
+                    <Spinner
+                        android:entries="@array/array_name"
+                        android:gravity="center"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:id="@+id/steering_material"
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+
+                        android:textColor="@color/colorPrimary" />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/steering_quantity"
+
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+
+                        android:textColor="@color/colorPrimary"/>
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+
+                    android:layout_height="1dp"
+                    android:background="@color/colorDivider" />
+                <LinearLayout
+                    android:weightSum="7"
+
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tyres"
+                        android:textColor="@color/colorPrimary"
+                        />
+                    <TextView
+
+                        android:text="na"
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/tyres"
+                        android:gravity="center"
+
+                        android:textColor="@color/colorPrimary" />
+                    <Spinner
+                        android:entries="@array/array_status"
+                        android:gravity="center"
+                        android:id="@+id/tyres_status"
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+
+                        android:textColor="@color/colorPrimary" />
+                    <Spinner
+                        android:entries="@array/array_name"
+                        android:gravity="center"
+                        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                        android:id="@+id/tyres_material"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:textColor="@color/colorPrimary" />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/tyres_quantity"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textColor="@color/colorPrimary"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorDivider" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/taskback"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/colorText"
+                    android:id="@+id/requsest"
+                    android:text="Request Materials"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

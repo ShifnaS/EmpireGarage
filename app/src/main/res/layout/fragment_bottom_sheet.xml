@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+
+    <!-- NOTE: This list should be displayed in a list
+    instead of nested layouts -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp">
+<ImageView
+    android:layout_gravity="center"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:src="@drawable/ic_expand_more_black_24dp"/>
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textAlignment="center"
+            android:text="SORT BY"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textAlignment="center"
+            android:text="Job Id"
+            android:id="@+id/jobId"
+            android:textColor="#737373"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="@dimen/activity_margin"
+        android:paddingRight="@dimen/activity_margin"
+        android:paddingTop="8dp">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:id="@+id/service"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Service"
+            android:textColor="#737373"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="@dimen/activity_margin"
+        android:paddingRight="@dimen/activity_margin"
+        android:paddingTop="8dp">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:id="@+id/advisor"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Advisor"
+            android:textColor="#737373"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="@dimen/activity_margin"
+        android:paddingRight="@dimen/activity_margin"
+        android:paddingTop="8dp">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:id="@+id/technician"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Technician"
+            android:textColor="#737373"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:id="@+id/customer"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Customer"
+            android:textColor="#737373"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:id="@+id/car"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Car"
+            android:textColor="#737373"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:id="@+id/plateNo"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Plate No"
+            android:textColor="#737373"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:id="@+id/starttime"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Started Date"
+            android:textColor="#737373"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:id="@+id/status"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Status"
+            android:textColor="#737373"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>
